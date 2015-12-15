@@ -579,7 +579,9 @@ uis.controller('uiSelectCtrl',
     _resetSearchInput();
     ctrl.open = false;
 
-    $scope.$broadcast('uis:close', skipFocusser);
+    // FIXME: commented out
+    // because of: https://github.com/angular-ui/ui-select/issues/818
+    ///comment///  $scope.$broadcast('uis:close', skipFocusser);
 
   };
 
